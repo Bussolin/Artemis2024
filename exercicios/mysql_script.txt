@@ -1,0 +1,18 @@
+-- Exercicio 1
+CREATE TABLE Product (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  price decimal(10,2) NOT NULL,
+  stock INTEGER default 0
+);
+
+-- Exercicio 2
+INSERT INTO Product (name, price, stock) VALUES ('Caneta',1.50,100);
+INSERT INTO Product (name, price, stock) VALUES ('Caderno',15.00,50);
+
+
+-- Exercicio 3
+UPDATE Product SET stock = 120 WHERE name = 'Caneta';
+
+-- Exercicio 4
+SELECT * FROM Product WHERE price > 10;
